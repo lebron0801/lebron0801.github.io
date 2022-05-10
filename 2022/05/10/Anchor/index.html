@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Anchor | Design Word</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="用于跳转到页面指定位置。 何时使用需要展现当前页面上可供跳转的锚点链接，以及快速在锚点之间跳转。 APIAnchor Props   成员 说明 类型 默认值 版本    affix 固定模式 boolean true    bounds 锚点区域边界 number 5    getContainer 指定滚动的容器 () &#x3D;&gt; HTMLElement () &#x3D;&gt; window">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Anchor">
+<meta property="og:url" content="https://lebron0801.github.io/2022/05/10/Anchor/index.html">
+<meta property="og:site_name" content="Design Word">
+<meta property="og:description" content="用于跳转到页面指定位置。 何时使用需要展现当前页面上可供跳转的锚点链接，以及快速在锚点之间跳转。 APIAnchor Props   成员 说明 类型 默认值 版本    affix 固定模式 boolean true    bounds 锚点区域边界 number 5    getContainer 指定滚动的容器 () &#x3D;&gt; HTMLElement () &#x3D;&gt; window">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-05-10T05:05:35.000Z">
+<meta property="article:modified_time" content="2022-05-10T05:06:13.878Z">
+<meta property="article:author" content="Lebron">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Design Word" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Design Word</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://lebron0801.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Anchor" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/05/10/Anchor/" class="article-date">
+  <time datetime="2022-05-10T05:05:35.000Z" itemprop="datePublished">2022-05-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Components/">Components</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Anchor
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>用于跳转到页面指定位置。</p>
+<h2 id="何时使用"><a href="#何时使用" class="headerlink" title="何时使用"></a>何时使用</h2><p>需要展现当前页面上可供跳转的锚点链接，以及快速在锚点之间跳转。</p>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="Anchor-Props"><a href="#Anchor-Props" class="headerlink" title="Anchor Props"></a>Anchor Props</h3><table>
+<thead>
+<tr>
+<th>成员</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>affix</td>
+<td>固定模式</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>bounds</td>
+<td>锚点区域边界</td>
+<td>number</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>getContainer</td>
+<td>指定滚动的容器</td>
+<td>() =&gt; HTMLElement</td>
+<td>() =&gt; window</td>
+<td></td>
+</tr>
+<tr>
+<td>getCurrentAnchor</td>
+<td>自定义高亮的锚点</td>
+<td>(activeLink: string) =&gt; string</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>offsetTop</td>
+<td>距离窗口顶部达到指定偏移量后触发</td>
+<td>number</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>showInkInFixed</td>
+<td><code>affix=&#123;false&#125;</code> 时是否显示小圆点</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>targetOffset</td>
+<td>锚点滚动偏移量，默认与 offsetTop 相同，<a href="#components-anchor-demo-targetOffset">例子</a></td>
+<td>number</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>onChange</td>
+<td>监听锚点链接改变</td>
+<td>(currentActiveLink: string) =&gt; void</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>onClick</td>
+<td><code>click</code> 事件的 handler</td>
+<td>function(e: Event, link: Object)</td>
+<td>-</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="Link-Props"><a href="#Link-Props" class="headerlink" title="Link Props"></a>Link Props</h3><table>
+<thead>
+<tr>
+<th>成员</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>href</td>
+<td>锚点链接</td>
+<td>string</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>target</td>
+<td>该属性指定在何处显示链接的资源。</td>
+<td>string</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>title</td>
+<td>文字内容</td>
+<td>ReactNode</td>
+<td>-</td>
+<td></td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://lebron0801.github.io/2022/05/10/Anchor/" data-id="cl2zss2cn000218u008mpcrhe" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/05/10/Alert/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Alert</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Components/">Components</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/biaoda/" rel="tag">biaoda</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/biaoda/" style="font-size: 10px;">biaoda</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/05/10/Anchor/">Anchor</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/10/Alert/">Alert</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/09/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 Lebron<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Alert | Design Word</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="警告提示，展现需要关注的信息。 何时使用 当某个页面需要向用户显示警告的信息时。 非浮层的静态展现形式，始终展现，不会自动消失，用户可以点击关闭。  API   参数 说明 类型 默认值 版本    action 自定义操作项 ReactNode - 4.9.0   afterClose 关闭动画结束后触发的回调函数 () &#x3D;&gt; void -    banner 是否用作顶部公告 boole">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Alert">
+<meta property="og:url" content="https://lebron0801.github.io/2022/05/10/Alert/index.html">
+<meta property="og:site_name" content="Design Word">
+<meta property="og:description" content="警告提示，展现需要关注的信息。 何时使用 当某个页面需要向用户显示警告的信息时。 非浮层的静态展现形式，始终展现，不会自动消失，用户可以点击关闭。  API   参数 说明 类型 默认值 版本    action 自定义操作项 ReactNode - 4.9.0   afterClose 关闭动画结束后触发的回调函数 () &#x3D;&gt; void -    banner 是否用作顶部公告 boole">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-05-10T05:03:14.000Z">
+<meta property="article:modified_time" content="2022-05-10T05:12:07.271Z">
+<meta property="article:author" content="Lebron">
+<meta property="article:tag" content="biaoda">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Design Word" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Design Word</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://lebron0801.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Alert" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/05/10/Alert/" class="article-date">
+  <time datetime="2022-05-10T05:03:14.000Z" itemprop="datePublished">2022-05-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Components/">Components</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Alert
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>警告提示，展现需要关注的信息。</p>
+<h2 id="何时使用"><a href="#何时使用" class="headerlink" title="何时使用"></a>何时使用</h2><ul>
+<li>当某个页面需要向用户显示警告的信息时。</li>
+<li>非浮层的静态展现形式，始终展现，不会自动消失，用户可以点击关闭。</li>
+</ul>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>action</td>
+<td>自定义操作项</td>
+<td>ReactNode</td>
+<td>-</td>
+<td>4.9.0</td>
+</tr>
+<tr>
+<td>afterClose</td>
+<td>关闭动画结束后触发的回调函数</td>
+<td>() =&gt; void</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>banner</td>
+<td>是否用作顶部公告</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>closable</td>
+<td>默认不显示关闭按钮</td>
+<td>boolean</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>closeText</td>
+<td>自定义关闭按钮</td>
+<td>ReactNode</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>closeIcon</td>
+<td>自定义关闭 Icon</td>
+<td>ReactNode</td>
+<td><code>&lt;CloseOutlined /&gt;</code></td>
+<td>4.17.0</td>
+</tr>
+<tr>
+<td>description</td>
+<td>警告提示的辅助性文字介绍</td>
+<td>ReactNode</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>icon</td>
+<td>自定义图标，<code>showIcon</code> 为 true 时有效</td>
+<td>ReactNode</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>警告提示内容</td>
+<td>ReactNode</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>showIcon</td>
+<td>是否显示辅助图标</td>
+<td>boolean</td>
+<td>false，<code>banner</code> 模式下默认值为 true</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>指定警告提示的样式，有四种选择 <code>success</code>、<code>info</code>、<code>warning</code>、<code>error</code></td>
+<td>string</td>
+<td><code>info</code>，<code>banner</code> 模式下默认值为 <code>warning</code></td>
+<td></td>
+</tr>
+<tr>
+<td>onClose</td>
+<td>关闭时触发的回调函数</td>
+<td>(e: MouseEvent) =&gt; void</td>
+<td>-</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="Alert-ErrorBoundary"><a href="#Alert-ErrorBoundary" class="headerlink" title="Alert.ErrorBoundary"></a>Alert.ErrorBoundary</h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>description</td>
+<td>自定义错误内容，如果未指定会展示报错堆栈</td>
+<td>ReactNode</td>
+<td>{{ error stack }}</td>
+<td></td>
+</tr>
+<tr>
+<td>message</td>
+<td>自定义错误标题，如果未指定会展示原生报错信息</td>
+<td>ReactNode</td>
+<td>{{ error }}</td>
+<td></td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://lebron0801.github.io/2022/05/10/Alert/" data-id="cl2zss2cq000318u08x901ipv" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/biaoda/" rel="tag">biaoda</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/05/10/Anchor/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Anchor
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/05/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Components/">Components</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/biaoda/" rel="tag">biaoda</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/biaoda/" style="font-size: 10px;">biaoda</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/05/10/Anchor/">Anchor</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/10/Alert/">Alert</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/09/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 Lebron<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
